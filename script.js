@@ -109,13 +109,3 @@ aktualizujZegarek(); // od razu pokazuje czas
 let klikow = 0;
 const zdjecie = document.getElementById("mojeZdjecie");
 const egg = document.getElementById("easterEgg");
-
-zdjecie.addEventListener("click", () => {
-    klikow++;
-    if (klikow === 5) {
-        egg.style.display = "block";  // pokaż easter egg
-    } else if (klikow > 5) {          
-        egg.style.display = "none";    // schowaj
-        klikow = 0;                     // reset licznika
-    }
-});
