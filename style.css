@@ -1,0 +1,74 @@
+body {
+    font-family: system-ui;
+    text-align: center;
+    color: white;
+    background: #f0f8ff; /* domyślne tło */
+    transition: background 0.5s;
+}
+
+h1 {
+    color: #ff4500;
+}
+
+img {
+    width: 400px;
+    border: 3px solid #ff4500;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#wiadomosc {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, color 0.5s;
+}
+
+#licznik2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.box {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: background 0.5s;
+}
+/* Tryb nocny przycisk */
+#toggleNight {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#toggleNight:hover {
+    background: #555;
+}
+
+/* Zegar */
+#zegarek {
+    color: #ff4500;
+}
